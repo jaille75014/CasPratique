@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitBuddy</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>FitBuddy</h1>
+    <p id="remaining">Séances d'entraînement restantes : </p>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input, button {
+            margin: 5px;
+        }
+        .completed {
+        background-color: #d4edda;
+        }
+    </style>
+        <input type="text" id="nom" placeholder="Nom de la séance">
+        <input type="text" id="description" placeholder="Description">
+        <input type="date" id="date">
+        <input type="number" id="duree" placeholder="Durée en minutes">
+        <input type="text" id="type" placeholder="Type">
+        <button onclick="addWorkout()">Ajouter</button>
+    <table id="workouts">
+        
+        <!-- Les séances d'entraînement seront insérées ici -->
+
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>
